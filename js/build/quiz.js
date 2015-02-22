@@ -1,13 +1,4 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-module.exports = function(a, obj){
-  for (var i = 0; i < a.length; i++) {
-    if (a[i] === obj) {
-        return true;
-    }
-  }
-  return false;
-};
-},{}],2:[function(require,module,exports){
 module.exports = function(url){
   // Return a new promise.
   return new Promise(function(resolve, reject) {
@@ -38,10 +29,9 @@ module.exports = function(url){
     req.send();
   });
 };
-},{}],3:[function(require,module,exports){
+},{}],2:[function(require,module,exports){
 var get           = require('./modules/get'),
   shuffleArray    = require('shuffle-array'),
-  contains        = require('./modules/array-contains'),
   content         = document.getElementById('content'),
   answers         = document.getElementById('answers'),
   question        = document.getElementById('question'),
@@ -128,7 +118,7 @@ function loadQuestion(){
   // randomly get question
   currentQuestion = Math.floor(Math.random() * numberQuestions);
 
-  if(contains(currentQuestion, questionsAsked) === false  && quizTotal > numberAsked){
+  if(questionsAsked.indexOf(currentQuestion) === -1  && quizTotal > numberAsked){
 
     // add the current question to questionsAsked array so it isn't asked again
     questionsAsked.push(currentQuestion);
@@ -171,7 +161,7 @@ function loadQuestion(){
     content.innerHTML = '<div class="results"><h2 class="'+ failPass +'">'+ percent +'%</h2><p>'+ correct.length + '/' + quizTotal+'</p></div>';
   }
 }
-},{"./modules/array-contains":1,"./modules/get":2,"shuffle-array":4}],4:[function(require,module,exports){
+},{"./modules/get":1,"shuffle-array":3}],3:[function(require,module,exports){
 'use strict';
 
 /**
@@ -255,4 +245,4 @@ shuffle.pick = function(arr, options) {
  */
 module.exports = shuffle;
 
-},{}]},{},[3]);
+},{}]},{},[2]);

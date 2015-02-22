@@ -1,6 +1,5 @@
 var get           = require('./modules/get'),
   shuffleArray    = require('shuffle-array'),
-  contains        = require('./modules/array-contains'),
   content         = document.getElementById('content'),
   answers         = document.getElementById('answers'),
   question        = document.getElementById('question'),
@@ -87,7 +86,7 @@ function loadQuestion(){
   // randomly get question
   currentQuestion = Math.floor(Math.random() * numberQuestions);
 
-  if(contains(currentQuestion, questionsAsked) === false  && quizTotal > numberAsked){
+  if(questionsAsked.indexOf(currentQuestion) === -1  && quizTotal > numberAsked){
 
     // add the current question to questionsAsked array so it isn't asked again
     questionsAsked.push(currentQuestion);
