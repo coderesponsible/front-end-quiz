@@ -52,7 +52,7 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files:{
-          'js/build/quiz-min.js': ['/js/build/quiz.js']
+          'js/build/quiz-min.js': ['js/build/quiz.js']
         },
       }
     },

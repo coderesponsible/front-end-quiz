@@ -4,9 +4,9 @@
         "category":"HTML",
         "answers": [
           {"answer": "Tells the browser how to render the HTML markup", "value": true},
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}
+          {"answer": "Loads all references to external JavaScript files", "value": false}, 
+          {"answer": "Adds CSS styles to the HTML page", "value": false}, 
+          {"answer": "It doesn't do anything it's just there as a comment to other developers", "value": false}
         ]
     },
     {
@@ -14,9 +14,9 @@
         "category":"HTML",
         "answers": [
           {"answer": "When W3C standards came out browsers couldn't start using them right away so there was two modes standards and quirks mode", "value": true},
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}
+          {"answer": "Quirks mode refers to WebKit browsers and standards mode refers to IE", "value": false}, 
+          {"answer": "Quirks mode is used for testing and standards mode is used in production websites", "value": false}, 
+          {"answer": "Quirks mode refers to the developer tools and standards mode refers to the browser window", "value": false}
         ]
     },
     {
@@ -24,39 +24,39 @@
         "category":"HTML",
         "answers": [
           {"answer": "Browsers that don't accept it render plain text/html", "value": true},
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}
+          {"answer": "There are performance issues", "value": false}, 
+          {"answer": "The browser only displays the CSS and not the HTML", "value": false}, 
+          {"answer": "Fonts render at 62.5%", "value": false}
         ]
     },
     {
-        "question": "How do you serve a page with content in multiple languages?",
+        "question": "How do you declare the language in HTML?",
         "category":"HTML",
         "answers": [
-          {"answer": "", "value": true},
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}
+          {"answer": "A language attribute can be added to the HTML tag", "value": true},
+          {"answer": "A language attribute should be added to the body tag", "value": false}, 
+          {"answer": "There's no way to declare it in HTML, it requires JavaScript", "value": false}, 
+          {"answer": "By adding a class to the body tag", "value": false}
         ]
     },
     {
         "question": "What are data- attributes good for?",
         "category":"HTML",
         "answers": [
-          {"answer": "", "value": true},
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}
+          {"answer": "Provide the ability to embed custom data attributes on all HTML elements", "value": true},
+          {"answer": "Create a way to not have to use classes and IDs for styling", "value": false}, 
+          {"answer": "They aren't good because they are legacy attributes that are no longer used in HTML5", "value": false}, 
+          {"answer": "They are good for accessibility", "value": false}
         ]
     },
     {
         "question": "What is not an HTML5 element?",
         "category":"HTML",
         "answers": [
-          {"answer": "<block>", "value": true},
-          {"answer": "<audio>", "value": false}, 
-          {"answer": "<canvas>", "value": false}, 
-          {"answer": "<section>", "value": false}
+          {"answer": "block", "value": true},
+          {"answer": "audio", "value": false}, 
+          {"answer": "canvas", "value": false}, 
+          {"answer": "section", "value": false}
         ]
     },
     {
@@ -90,13 +90,13 @@
         ]
     },
     {
-        "question": "What does 'resetting' in CSS mean?",
+        "question": "What does 'reset' in CSS mean?",
         "category":"CSS",
         "answers": [
           {"answer": "Resets the default browser styling", "value": true},
           {"answer": "Normalizes styles accross all browsers", "value": false}, 
           {"answer": "Removes inline CSS styles", "value": false}, 
-          {"answer": "", "value": false}
+          {"answer": "Start the project over", "value": false}
         ]
     },
     {
@@ -143,10 +143,10 @@
         "question": "What is the box model?",
         "category":"CSS",
         "answers": [
-          {"answer": "", "value": true},
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}
+          {"answer": "All HTML elements can be considered as boxes", "value": true},
+          {"answer": "A way of stacking HTML elements", "value": false}, 
+          {"answer": "A way of styling HTML elements", "value": false}, 
+          {"answer": "Creates a way to position the browser grid", "value": false}
         ]
     },
     {
@@ -204,8 +204,8 @@
         "category":"JavaScript",
         "answers": [
           {"answer": "A function is a block of code designed to preform a task", "value": true},
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}, 
+          {"answer": "A calculation method", "value": false}, 
+          {"answer": "A tool for writing JavaScript", "value": false}, 
           {"answer": "", "value": false}
         ]
     },
@@ -225,8 +225,8 @@
         "answers": [
           {"answer": "Is a container for storing data values", "value": true},
           {"answer": "A contitional statement", "value": false}, 
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}
+          {"answer": "A name for all functions", "value": false}, 
+          {"answer": "A way to log events to the browser", "value": false}
         ]
     },
     {
@@ -265,8 +265,8 @@
         "answers": [
           {"answer": "Adds a string to the DOM", "value": true},
           {"answer": "Deletes elements from the DOM", "value": false}, 
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}
+          {"answer": "Writes string values to the console for debugging", "value": false}, 
+          {"answer": "Writes the date to a DOM element", "value": false}
         ]
     },
     {
