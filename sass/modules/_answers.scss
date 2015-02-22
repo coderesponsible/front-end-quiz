@@ -1,0 +1,21 @@
+.answers{
+  li{
+    text-align:center;
+    margin-bottom:5px;
+  }
+
+  a{
+    @include inline-block();
+    background:$grey;
+    @include roundedCorners(5);
+    width:100%;
+    padding:15px 0;
+    color:black;
+    text-decoration:none;
+
+    &:hover, &:focus{
+      background:darken($grey, 20%);
+      color:white;
+    }
+  }
+}

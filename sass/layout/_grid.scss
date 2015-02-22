@@ -1,0 +1,4 @@
+.row{
+  @extend %marginAuto;
+  max-width:$maxWidth;
+}

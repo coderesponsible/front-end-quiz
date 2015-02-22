@@ -1,0 +1,9 @@
+header{
+  text-align:center;
+  padding:10px;
+  border-bottom:1px solid $grey;
+
+  h1{
+    @include rem("font-size", 30);
+  }
+}

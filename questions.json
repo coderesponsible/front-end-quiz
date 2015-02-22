@@ -1,0 +1,312 @@
+[
+    {
+        "question": "What does doctype in HTML do?",
+        "category":"HTML",
+        "answers": [
+          {"answer": "Tells the browser how to render the HTML markup", "value": true},
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}
+        ]
+    },
+    {
+        "question": "What’s the difference between standards and quirks mode?",
+        "category":"HTML",
+        "answers": [
+          {"answer": "When W3C standards came out browsers couldn’t start using them right away so there was two modes standards and quirks mode", "value": true},
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}
+        ]
+    },
+    {
+        "question": "What maybe a problem with serving pages as application/xhtml+xml?",
+        "category":"HTML",
+        "answers": [
+          {"answer": "Browsers that don’t accept it render plain text/html", "value": true},
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}
+        ]
+    },
+    {
+        "question": "How do you serve a page with content in multiple languages?",
+        "category":"HTML",
+        "answers": [
+          {"answer": "", "value": true},
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}
+        ]
+    },
+    {
+        "question": "What are data- attributes good for?",
+        "category":"HTML",
+        "answers": [
+          {"answer": "", "value": true},
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}
+        ]
+    },
+    {
+        "question": "What is not an HTML5 element?",
+        "category":"HTML",
+        "answers": [
+          {"answer": "<block>", "value": true},
+          {"answer": "<audio>", "value": false}, 
+          {"answer": "<canvas>", "value": false}, 
+          {"answer": "<section>", "value": false}
+        ]
+    },
+    {
+        "question": "What is the difference between sessionStorage and localStorage?",
+        "category":"HTML",
+        "answers": [
+          {"answer": "localStorage stores data with no expiration date", "value": true},
+          {"answer": "sessionStorage can only be used once", "value": false}, 
+          {"answer": "sessionStorage holds more data", "value": false}, 
+          {"answer": "There's no difference they both accomplish the same thing", "value": false}
+        ]
+    },
+    {
+        "question": "How can you make a script run asynchronous?",
+        "category":"HTML",
+        "answers": [
+          {"answer": "<script async></script>", "value": true},
+          {"answer": "<asynchronous></asynchronous>", "value": false}, 
+          {"answer": "<async script></script>", "value": false}, 
+          {"answer": "<script asynchronous></script>", "value": false}
+        ]
+    },
+    {
+        "question": "What is the difference between classes and IDs in CSS?",
+        "category":"CSS",
+        "answers": [
+          {"answer": "IDs can only be used once in the HTML", "value": true},
+          {"answer": "IDs can be accessed by JavaScript", "value": false}, 
+          {"answer": "Classes are used on children elements", "value": false}, 
+          {"answer": "Classes can't be added to the body element", "value": false}
+        ]
+    },
+    {
+        "question": "What does 'resetting' in CSS mean?",
+        "category":"CSS",
+        "answers": [
+          {"answer": "Resets the default browser styling", "value": true},
+          {"answer": "Normalizes styles accross all browsers", "value": false}, 
+          {"answer": "Removes inline CSS styles", "value": false}, 
+          {"answer": "", "value": false}
+        ]
+    },
+    {
+        "question": "What does z-index do?",
+        "category":"CSS",
+        "answers": [
+          {"answer": "Controls the vertical stacking order of elements that overlap", "value": true},
+          {"answer": "Moves elements off screen", "value": false}, 
+          {"answer": "Hides elements from the screen", "value": false}, 
+          {"answer": "Controls the horizontal stacking order of elements that overlap", "value": false}
+        ]
+    },
+    {
+        "question": "What does clearfix in CSS do?",
+        "category":"CSS",
+        "answers": [
+          {"answer": "Fixes issues related to floating child elements within a parent element", "value": true},
+          {"answer": "Removes elements from the DOM", "value": false}, 
+          {"answer": "Hides content off screen", "value": false}, 
+          {"answer": "Used for continuous scroll", "value": false}
+        ]
+    },
+    {
+        "question": "What are CSS sprites?",
+        "category":"CSS",
+        "answers": [
+          {"answer": "A collection of images put into a single image", "value": true},
+          {"answer": "CSS animations", "value": false}, 
+          {"answer": "Small images", "value": false}, 
+          {"answer": "Minified images", "value": false}
+        ]
+    },
+    {
+        "question": "What are Sass, Stylus and LESS?",
+        "category":"CSS",
+        "answers": [
+          {"answer": "CSS pre-processors", "value": true},
+          {"answer": "CSS frameworks", "value": false}, 
+          {"answer": "Repsonsive CSS grid systems", "value": false}, 
+          {"answer": "Types of CSS", "value": false}
+        ]
+    },
+    {
+        "question": "What is the box model?",
+        "category":"CSS",
+        "answers": [
+          {"answer": "", "value": true},
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}
+        ]
+    },
+    {
+        "question": "What does the 'C' in CSS stand for?",
+        "category":"CSS",
+        "answers": [
+          {"answer": "Cascading", "value": true},
+          {"answer": "Concatenate", "value": false}, 
+          {"answer": "Color", "value": false}, 
+          {"answer": "Complete", "value": false}
+        ]
+    },
+    {
+        "question": "Which one of these is a CSS framework?",
+        "category":"CSS",
+        "answers": [
+          {"answer": "Bootstrap", "value": true},
+          {"answer": "Angular", "value": false}, 
+          {"answer": "Backbone", "value": false}, 
+          {"answer": "CSS Block", "value": false}
+        ]
+    },
+    {
+        "question": "What is Flexbox?",
+        "category":"CSS",
+        "answers": [
+          {"answer": "Is a layout mode providing for the arrangement of elements", "value": true},
+          {"answer": "How the browser interprets CSS", "value": false}, 
+          {"answer": "A CSS animation framework", "value": false}, 
+          {"answer": "A way to change the width of the browser window", "value": false}
+        ]
+    },
+    {
+        "question": "Why is it better to use translate() rather than an position:absolute Top/Right/Bottom/Left?",
+        "category":"CSS",
+        "answers": [
+          {"answer": "Better performance", "value": true},
+          {"answer": "More browser support", "value": false}, 
+          {"answer": "Easier to use", "value": false}, 
+          {"answer": "Position:absolute is only supported in legacy browsers", "value": false}
+        ]
+    },
+    {
+        "question": "How do you create a DOM node with JavaScript?",
+        "category":"JavaScript",
+        "answers": [
+          {"answer": "document.createElement();", "value": true},
+          {"answer": "window.createElement();", "value": false}, 
+          {"answer": "createAElement();", "value": false}, 
+          {"answer": "document.createNewElement();", "value": false}
+        ]
+    },
+    {
+        "question": "What is a function in JavaScript?",
+        "category":"JavaScript",
+        "answers": [
+          {"answer": "A function is a block of code designed to preform a task", "value": true},
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}
+        ]
+    },
+    {
+        "question": "What is an array?",
+        "category":"JavaScript",
+        "answers": [
+          {"answer": "Stores multiple values in a single variable", "value": true},
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}
+        ]
+    },
+    {
+        "question": "What is a variable?",
+        "category":"JavaScript",
+        "answers": [
+          {"answer": "Is a container for storing data values", "value": true},
+          {"answer": "A contitional statement", "value": false}, 
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}
+        ]
+    },
+    {
+        "question": "What is CommonJS?",
+        "category":"JavaScript",
+        "answers": [
+          {"answer": "", "value": true},
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}
+        ]
+    },
+    {
+        "question": "When will a variable be null?",
+        "category":"JavaScript",
+        "answers": [
+          {"answer": "", "value": true},
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}, 
+          {"answer": "When it hasn't been declared", "value": false}
+        ]
+    },
+    {
+        "question": "What does asynchronous mean?",
+        "category":"JavaScript",
+        "answers": [
+          {"answer": "A script will send a request to the server, and continue it's execution without waiting for the reply", "value": true},
+          {"answer": "A task calls another task", "value": false}, 
+          {"answer": "Order of operation", "value": false}, 
+          {"answer": "One task waits for the next task to finish before running", "value": false}
+        ]
+    },
+    {
+        "question": "What does document.write() do?",
+        "category":"JavaScript",
+        "answers": [
+          {"answer": "Adds a string to the DOM", "value": true},
+          {"answer": "Deletes elements from the DOM", "value": false}, 
+          {"answer": "", "value": false}, 
+          {"answer": "", "value": false}
+        ]
+    },
+    {
+        "question": "What does AJAX mean?",
+        "category":"JavaScript",
+        "answers": [
+          {"answer": "Asynchronous JavaScript and XML", "value": true},
+          {"answer": "Alternative JavaScript Action XML", "value": false}, 
+          {"answer": "Accessible XML", "value": false}, 
+          {"answer": "None of the above", "value": false}
+        ]
+    },
+    {
+        "question": "What is event bubbling?",
+        "category":"JavaScript",
+        "answers": [
+          {"answer": "The handler of the parent works even if the child is clicked", "value": true},
+          {"answer": "A type of animation easing", "value": false}, 
+          {"answer": "Events that cause errors in the browser", "value": false}, 
+          {"answer": "Surfacing an event", "value": false}
+        ]
+    },
+    {
+        "question": "Difference between document load event and document ready event?",
+        "category":"JavaScript",
+        "answers": [
+          {"answer": "Ready event occurs after the HTML document has been loaded, while the onload event occurs later, when all content has been loaded", "value": true},
+          {"answer": "Both events accomplish the same thing", "value": false}, 
+          {"answer": "Ready event occurs when all HTML elements and images have been loaded, while the onload event occurs when the HTML Head has been loaded", "value": false}, 
+          {"answer": "Document load doesn't work without document ready event", "value": false}
+        ]
+    },
+    {
+        "question": "What can be a problem with a single page app?",
+        "category":"JavaScript",
+        "answers": [
+          {"answer": "Can cause SEO issues", "value": true},
+          {"answer": "May not have enough pages", "value": false}, 
+          {"answer": "Can have HTML issues", "value": false}, 
+          {"answer": "May cause W3C validation errors", "value": false}
+        ]
+    }
+]
