@@ -9,36 +9,38 @@ var get           = require('./modules/get'),
   currentCat,
   currentQuestion,
   data;
-// check if answer is correct
-document.querySelector('body').addEventListener('click', function(event) {
-  if (event.target.className === 'answer') {
-    event.preventDefault();
-    var rightWrong = false;
-    var ans = data[currentQuestion].answers;
-    for (var i = 0; i < ans.length; i++){
-      if(ans[i].answer === event.target.innerHTML){
-        if(ans[i].value === true){
-          rightWrong = true;
-        }else{
-          rightWrong = false;
-        }
-      }
-    }
-    
-    if(rightWrong === true){
-      correct.push(1);
-    }else{
-      correct.push(0);
-    }
-    loadQuestion();
-  }
-});
-
+// load questions json
 get('questions.json').then(function(response) {
   data = JSON.parse(response);
   loadQuestion();
 }, function(error) {
   console.error('Failed!', error);
+});
+
+// check if answer is correct
+document.querySelector('body').addEventListener('click', function(event) {
+  if (event.target.className === 'answer') {
+    event.preventDefault();
+
+    var rightWrong    = false,
+      ans             = data[currentQuestion].answers;
+
+    for (var i = 0; i < ans.length; i++){
+      if(ans[i].answer === event.target.innerHTML){
+        if(ans[i].value === true){
+          rightWrong = true;
+        }
+      }
+    }
+
+    // if answered correct push to correct array
+    if(rightWrong === true){
+      correct.push(1);
+    }
+
+    // load another question
+    loadQuestion();
+  }
 });
 
 function loadQuestion(){
@@ -51,7 +53,7 @@ function loadQuestion(){
   // randomly get question
   currentQuestion = Math.floor(Math.random() * numberQuestions);
 
-  if(contains(currentQuestion, questionsAsked) === false){
+  if(contains(currentQuestion, questionsAsked) === false && numberQuestions > numberAsked){
     questionsAsked.push(currentQuestion);
     console.log(questionsAsked);
     numberAsked++;
@@ -63,11 +65,12 @@ function loadQuestion(){
     for (var i = 0; i < ans.length; i++){
       answerList += '<li><a href="#" class="answer">' + ans[i].answer + '</a></li>';
     }
-    
+    // add multiple choice answers to DOM
     answers.innerHTML = answerList;
-  }else if(numberQuestions < numberAsked){
+  }else if(numberQuestions > numberAsked){
     loadQuestion();
   }else{
-    alert('all done');
+    // all questions have been answered
+    console.log('all done');
   }
 }
