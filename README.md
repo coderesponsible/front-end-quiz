@@ -1,4 +1,4 @@
-Front End Challenge
+Front End Quiz
 =============
 A trivia quiz for front end engineering questions.
  
