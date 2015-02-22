@@ -5,6 +5,8 @@ var get           = require('./modules/get'),
   answers         = document.getElementById('answers'),
   question        = document.getElementById('question'),
   timer           = document.getElementById('timer'),
+  currentNum      = document.getElementById('current-number'),
+  totalNum        = document.getElementById('total-questions'),
   quizTotal       = 25,
   numberAsked     = 0,
   correct         = [],
@@ -13,6 +15,9 @@ var get           = require('./modules/get'),
   currentQuestion,
   time,
   data;
+
+// set the number of questions being asked
+totalNum.innerHTML = quizTotal;
 
 // load questions json
 get('questions.json').then(function(response) {
@@ -82,14 +87,26 @@ function loadQuestion(){
   // randomly get question
   currentQuestion = Math.floor(Math.random() * numberQuestions);
 
-  if(contains(currentQuestion, questionsAsked) === false && quizTotal > numberAsked){
+  if(contains(currentQuestion, questionsAsked) === false  && quizTotal > numberAsked){
+
+    // add the current question to questionsAsked array so it isn't asked again
     questionsAsked.push(currentQuestion);
 
+    //increase the number of questions asked
     numberAsked++;
+
+    // update the current question number
+    currentNum.innerHTML = numberAsked;
+
+    // add question to HTML
     question.innerHTML = data[currentQuestion].question;
 
+    // the question category
     currentCat = data[currentQuestion].category;
 
+
+
+    // get the multiple choice answsers for the question
     var ans = shuffleArray(data[currentQuestion].answers);
     for (var i = 0; i < ans.length; i++){
       answerList += '<li><a href="#" class="answer">' + ans[i].answer + '</a></li>';
@@ -99,11 +116,17 @@ function loadQuestion(){
 
     //start timer
     startTimer();
+
   }else if(quizTotal > numberAsked){
+    // load another question
     loadQuestion();
   }else{
     // all questions have been answered
-    var percent = parseInt((correct.length / quizTotal) * 100, 10) + '%';
-    content.innerHTML = '<h2>'+ percent +'</h2><p>'+ correct.length + '/' + quizTotal+'</p>';
+    var percent = parseInt((correct.length / quizTotal) * 100, 10);
+    var failPass = 'pass';
+    if(percent <= 50){
+      failPass = 'fail';
+    }
+    content.innerHTML = '<div class="results"><h2 class="'+ failPass +'">'+ percent +'%</h2><p>'+ correct.length + '/' + quizTotal+'</p></div>';
   }
 }

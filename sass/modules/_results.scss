@@ -1,0 +1,18 @@
+.results{
+  margin-top:30px;
+  text-align:center;
+
+  h2{
+    @include rem("font-size", 28);
+
+    &.fail{
+      color:red;
+    }
+
+    &.pass{
+      color:green;
+    }
+  }
+
+
+}

@@ -50,7 +50,7 @@
         ]
     },
     {
-        "question": "What is not an HTML5 element?",
+        "question": "What is NOT an HTML5 element?",
         "category":"HTML",
         "answers": [
           {"answer": "block", "value": true},
