@@ -73,10 +73,10 @@
         "question": "How can you make a script run asynchronous?",
         "category":"HTML",
         "answers": [
-          {"answer": "<script async></script>", "value": true},
-          {"answer": "<asynchronous></asynchronous>", "value": false}, 
-          {"answer": "<async script></script>", "value": false}, 
-          {"answer": "<script asynchronous></script>", "value": false}
+          {"answer": "script async", "value": true},
+          {"answer": "asynchronous", "value": false}, 
+          {"answer": "async script", "value": false}, 
+          {"answer": "script asynchronous", "value": false}
         ]
     },
     {
