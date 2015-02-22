@@ -10,10 +10,10 @@
         ]
     },
     {
-        "question": "What’s the difference between standards and quirks mode?",
+        "question": "What's the difference between standards and quirks mode?",
         "category":"HTML",
         "answers": [
-          {"answer": "When W3C standards came out browsers couldn’t start using them right away so there was two modes standards and quirks mode", "value": true},
+          {"answer": "When W3C standards came out browsers couldn't start using them right away so there was two modes standards and quirks mode", "value": true},
           {"answer": "", "value": false}, 
           {"answer": "", "value": false}, 
           {"answer": "", "value": false}
@@ -23,7 +23,7 @@
         "question": "What maybe a problem with serving pages as application/xhtml+xml?",
         "category":"HTML",
         "answers": [
-          {"answer": "Browsers that don’t accept it render plain text/html", "value": true},
+          {"answer": "Browsers that don't accept it render plain text/html", "value": true},
           {"answer": "", "value": false}, 
           {"answer": "", "value": false}, 
           {"answer": "", "value": false}
@@ -214,9 +214,9 @@
         "category":"JavaScript",
         "answers": [
           {"answer": "Stores multiple values in a single variable", "value": true},
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}
+          {"answer": "A way to sort numbers", "value": false}, 
+          {"answer": "Styles elements in the DOM", "value": false}, 
+          {"answer": "None of these are correct", "value": false}
         ]
     },
     {
@@ -233,20 +233,20 @@
         "question": "What is CommonJS?",
         "category":"JavaScript",
         "answers": [
-          {"answer": "", "value": true},
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}
+          {"answer": "Creates a way to include JavaScript modules within the current scope", "value": true},
+          {"answer": "Groups all common functions in JavaScript", "value": false}, 
+          {"answer": "An extensive list of JavaScript libraries and frameworks", "value": false}, 
+          {"answer": "A way to minify and Concatenate JavaScript files", "value": false}
         ]
     },
     {
-        "question": "When will a variable be null?",
+        "question": "In JavaScript when will a variable be undefined?",
         "category":"JavaScript",
         "answers": [
-          {"answer": "", "value": true},
-          {"answer": "", "value": false}, 
-          {"answer": "", "value": false}, 
-          {"answer": "When it hasn't been declared", "value": false}
+          {"answer": "When a variable hasn't be defined with a value", "value": true},
+          {"answer": "A variable can never be undefined", "value": false}, 
+          {"answer": "Variable exists and has been set to null", "value": false}, 
+          {"answer": "When a variable isn't declared with 'var'", "value": false}
         ]
     },
     {
