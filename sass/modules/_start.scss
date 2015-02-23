@@ -1,0 +1,17 @@
+.start{
+  background:green;
+  @include roundedCorners(5);
+  color:white;
+  width:90%;
+  max-width:400px;
+  padding:15px;
+  text-decoration:none;
+  @extend %marginAuto;
+  display:block;
+  text-align:center;
+  margin-top:30px;
+
+  &:hover, &:focus{
+    background:lighten(green, 10%);
+  }
+}

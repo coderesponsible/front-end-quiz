@@ -6,6 +6,7 @@ var get           = require('./modules/get'),
   timer           = document.getElementById('timer'),
   currentNum      = document.getElementById('current-number'),
   totalNum        = document.getElementById('total-questions'),
+  start           = document.getElementById('start'),
   quizTotal       = 25,
   numberAsked     = 0,
   correct         = [],
@@ -21,9 +22,14 @@ totalNum.innerHTML = quizTotal;
 // load questions json
 get('questions.json').then(function(response) {
   data = JSON.parse(response);
-  loadQuestion();
 }, function(error) {
   console.error('Failed!', error);
+});
+
+// start quiz
+start.addEventListener('click', function(event) {
+  start.style.display = 'none';
+  loadQuestion();
 });
 
 // check if answer is correct
