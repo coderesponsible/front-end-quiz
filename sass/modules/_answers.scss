@@ -1,17 +1,30 @@
 .answers{
+  max-width:600px;
+  @extend %marginAuto;
+  padding:0 30px;
+  margin-bottom:60px;
+
   li{
     text-align:center;
-    margin-bottom:5px;
+    margin-bottom:10px;
   }
 
   a{
     @include inline-block();
     background:$grey;
     @include roundedCorners(5);
-    width:100%;
-    padding:15px 0;
+    width:90%;
+    padding:15px;
     color:black;
     text-decoration:none;
+
+    &.wrong{
+      background:red;
+    }
+
+    &.correct{
+      background:green;
+    }
 
     &:hover, &:focus{
       background:darken($grey, 20%);
