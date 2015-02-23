@@ -39,8 +39,16 @@ document.querySelector('body').addEventListener('click', function(event) {
 
     var rightWrong    = false,
       ans             = data[currentQuestion].answers;
-
+    var atag = document.getElementsByClassName('answer');
     for (var i = 0; i < ans.length; i++){
+
+      // highlight the correct answer
+      if(atag[i].innerHTML === ans[i].answer && ans[i].value === true){
+        atag[i].style.background = 'green';
+        atag[i].style.color = 'white';
+      }
+
+      // set the answer to right if it's correct
       if(ans[i].answer === event.target.innerHTML && ans[i].value === true){
         rightWrong = true;
       }
@@ -49,8 +57,6 @@ document.querySelector('body').addEventListener('click', function(event) {
     // if answered correct push to correct array
     if(rightWrong === true){
       correct.push(1);
-      event.target.style.background = 'green';
-      event.target.style.color = 'white';
     }else{
       event.target.style.background = 'red';
       event.target.style.color = 'white';
@@ -62,7 +68,7 @@ document.querySelector('body').addEventListener('click', function(event) {
     // load another question
     setTimeout(function(){
       loadQuestion();
-    }, 1000);
+    }, 1500);
   }
 });
 
