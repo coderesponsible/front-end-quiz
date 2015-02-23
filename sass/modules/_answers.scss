@@ -27,8 +27,7 @@
     }
 
     &:hover, &:focus{
-      background:darken($grey, 20%);
-      color:white;
+      background:darken($grey, 15%);
     }
   }
 }

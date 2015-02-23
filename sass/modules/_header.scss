@@ -6,4 +6,8 @@ header{
   h1{
     @include rem("font-size", 30);
   }
+
+  .timer{
+    @include rem("font-size", 22);
+  }
 }
