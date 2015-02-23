@@ -80,6 +80,16 @@
         ]
     },
     {
+        "question": "What is WAI-ARIA?",
+        "category":"HTML",
+        "answers": [
+          {"answer": "Web Accessibility Initiative – Accessible Rich Internet Applications", "value": true},
+          {"answer": "Web Access Internationaly - All Real Internet Areas", "value": false}, 
+          {"answer": "Web standards", "value": false}, 
+          {"answer": "A group that focuses on helping browser load times", "value": false}
+        ]
+    },
+    {
         "question": "What is the difference between classes and IDs in CSS?",
         "category":"CSS",
         "answers": [
