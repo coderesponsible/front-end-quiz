@@ -35,23 +35,28 @@ document.querySelector('body').addEventListener('click', function(event) {
       ans             = data[currentQuestion].answers;
 
     for (var i = 0; i < ans.length; i++){
-      if(ans[i].answer === event.target.innerHTML){
-        if(ans[i].value === true){
-          rightWrong = true;
-        }
+      if(ans[i].answer === event.target.innerHTML && ans[i].value === true){
+        rightWrong = true;
       }
     }
 
     // if answered correct push to correct array
     if(rightWrong === true){
       correct.push(1);
+      event.target.style.background = 'green';
+      event.target.style.color = 'white';
+    }else{
+      event.target.style.background = 'red';
+      event.target.style.color = 'white';
     }
 
     // clear previous timer
     clearInterval(time);
 
     // load another question
-    loadQuestion();
+    setTimeout(function(){
+      loadQuestion();
+    }, 1000);
   }
 });
 
