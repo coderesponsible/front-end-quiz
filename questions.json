@@ -318,5 +318,15 @@
           {"answer": "Can have HTML issues", "value": false}, 
           {"answer": "May cause W3C validation errors", "value": false}
         ]
+    },
+    {
+        "question": "How do JavaScript closures work?",
+        "category":"JavaScript",
+        "answers": [
+          {"answer": "A function within another function, the inner function has access to variables in the outer function", "value": true},
+          {"answer": "It's a way to close a function in JavaScript", "value": false}, 
+          {"answer": "JavaScript doesn't use closures", "value": false}, 
+          {"answer": "Closures help structure objects in JavaScript", "value": false}
+        ]
     }
 ]
