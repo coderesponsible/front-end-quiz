@@ -18,6 +18,14 @@ module.exports = function(grunt) {
         ],
       }
     },
+    spell: {
+      all: {
+        src: ['questions.json'],
+        options: {
+          ignore: []
+        }
+      }
+    },
     jshint: {
       all: ['js/**/*.js'],
       options: {
@@ -127,5 +135,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-jsonlint');
+  grunt.loadNpmTasks('grunt-spell');
   grunt.registerTask('default',['watch']);
 };

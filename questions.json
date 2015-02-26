@@ -255,7 +255,7 @@
         "answers": [
           {"answer": "When a variable hasn't be defined with a value", "value": true},
           {"answer": "A variable can never be undefined", "value": false}, 
-          {"answer": "Variable exists and has been set to null", "value": false}, 
+          {"answer": "Variable exists and is set to null", "value": false}, 
           {"answer": "When a variable isn't declared with 'var'", "value": false}
         ]
     },
@@ -263,7 +263,7 @@
         "question": "What does asynchronous mean?",
         "category":"JavaScript",
         "answers": [
-          {"answer": "A script will send a request to the server, and continue it's execution without waiting for the reply", "value": true},
+          {"answer": "A script will send a request to the server, and continue its execution without waiting for the reply", "value": true},
           {"answer": "A task calls another task", "value": false}, 
           {"answer": "Order of operation", "value": false}, 
           {"answer": "One task waits for the next task to finish before running", "value": false}
@@ -303,14 +303,14 @@
         "question": "Difference between document load event and document ready event?",
         "category":"JavaScript",
         "answers": [
-          {"answer": "Ready event occurs after the HTML document has been loaded, while the onload event occurs later, when all content has been loaded", "value": true},
+          {"answer": "Ready event occurs after the HTML document is loaded, while the onload event occurs later, when all content is loaded", "value": true},
           {"answer": "Both events accomplish the same thing", "value": false}, 
-          {"answer": "Ready event occurs when all HTML elements and images have been loaded, while the onload event occurs when the HTML Head has been loaded", "value": false}, 
+          {"answer": "Ready event occurs when all HTML elements and images have been loaded, while the onload event occurs when the HTML Head is loaded", "value": false}, 
           {"answer": "Document load doesn't work without document ready event", "value": false}
         ]
     },
     {
-        "question": "What can be a problem with a single page app?",
+        "question": "What is a problem with a single page app?",
         "category":"JavaScript",
         "answers": [
           {"answer": "Can cause SEO issues", "value": true},
@@ -337,6 +337,16 @@
           {"answer": "A JavaScript library", "value": false}, 
           {"answer": "A JavaScript framework for building a prototype quick and easily", "value": false}, 
           {"answer": "Prototypes are functions that can be written to update arrays", "value": false}
+        ]
+    },
+    {
+        "question": "What does MVC mean?",
+        "category":"JavaScript",
+        "answers": [
+          {"answer": "Model view controller", "value": true},
+          {"answer": "Models virtually computed", "value": false}, 
+          {"answer": "Mixins variable commands", "value": false}, 
+          {"answer": "Messaging virtual computer", "value": false}
         ]
     }
 ]

@@ -19,6 +19,7 @@
     "grunt-newer": "^1.1.0",
     "grunt-sass": "^0.17.0",
     "grunt-sassyclean": "^0.1.1",
+    "grunt-spell": "^0.2.1",
     "jshint-stylish": "^1.0.0",
     "shuffle-array": "^0.1.0"
   },
