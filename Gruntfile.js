@@ -20,7 +20,7 @@ module.exports = function(grunt) {
     },
     spell: {
       all: {
-        src: ['questions.json'],
+        src: ['questions.json', 'README.md'],
         options: {
           ignore: []
         }
