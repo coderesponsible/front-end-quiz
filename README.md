@@ -3,6 +3,8 @@ Front End Quiz
 A trivia quiz for front end engineering questions.
 
 [DEMO](http://coderesponsible.com/front-end-developer-quiz/)
+
+Open to pull requests for more questions in the questions.json file.
  
 ## Release History
 * 0.1.0: Initial release.
