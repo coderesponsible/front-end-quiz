@@ -328,5 +328,15 @@
           {"answer": "JavaScript doesn't use closures", "value": false}, 
           {"answer": "Closures help structure objects in JavaScript", "value": false}
         ]
+    },
+    {
+        "question": "What are JavaScript prototypes?",
+        "category":"JavaScript",
+        "answers": [
+          {"answer": "Prototypes allow you to easily define methods to all instances of a particular object", "value": true},
+          {"answer": "A JavaScript library", "value": false}, 
+          {"answer": "A JavaScript framework for building a prototype quick and easily", "value": false}, 
+          {"answer": "Prototypes are functions that can be written to update arrays", "value": false}
+        ]
     }
 ]
