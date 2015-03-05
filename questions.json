@@ -213,7 +213,7 @@
         "question": "What is a function in JavaScript?",
         "category":"JavaScript",
         "answers": [
-          {"answer": "A function is a block of code designed to preform a task", "value": true},
+          {"answer": "A function is a block of code designed to perform a task", "value": true},
           {"answer": "A calculation method", "value": false}, 
           {"answer": "A tool for writing JavaScript", "value": false}, 
           {"answer": "Libraries or frameworks added to a project", "value": false}
